@@ -1,0 +1,51 @@
+#planning{
+    width: 100%;
+    height: 100vh;
+    // background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5rem;
+    > div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        > h1{
+            font-size: 3rem;
+            padding: 1rem 0;
+        }
+        > h3{
+            font-size: 1.5rem;
+        }
+    }
+    
+    .planningTrip{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        > article{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            // padding: 2rem 0;
+            justify-content: space-around;
+            height: 15rem;
+            width: 25%;
+            > span {
+                color: #706f7b;
+            }
+
+            > h2 {
+                font-weight:900;
+                // padding: 1rem 0;
+            }
+             
+            > svg {
+                font-size: 4rem;
+                // padding: 1rem 0;
+            }
+        }
+
+    }
+}

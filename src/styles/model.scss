@@ -1,0 +1,115 @@
+#model{
+    width: 100%;
+    height: 100vh;
+    // background-color: beige;
+    padding: 0 2rem;
+
+    .modelTop{
+        height: 25%;
+        margin-bottom: 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        vertical-align: center;
+        justify-content: space-around;
+        > h3{
+            font-size: 1.5rem;
+        }
+        > h1{
+            font-size: 3rem;
+        }
+        > p {
+            text-align: center;
+            color: #706f7b;
+        }
+
+    }
+
+    .modelDescription{
+        display: flex;
+        justify-content: space-between;
+        > img {
+            margin: 2rem;
+            height: 20rem;
+            width: 30rem;
+            // background-color: skyblue;
+        }
+
+        .bikeButton{
+            display: flex;
+            flex-direction: column;
+            bottom: 0;
+            height: 25rem;
+            width: 17rem;
+            // background-color: yellow;
+            // margin-bottom: 0;
+            justify-content: space-between;
+
+            > button{
+                color: black;
+                width: 17rem;
+                height: 4rem;
+                border: none;
+                margin: 3px;
+                font-size: 1.5rem;
+            }
+        }
+        .bikeDetail{
+            width: 17rem;
+            height: 25rem;
+
+            > div{
+                width: inherit;
+                // background-color: red;
+            }
+
+            .bikeDetail1{
+                width: inherit;
+                display: flex;
+                height: inherit;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                .thirdDetail{
+                    display: flex;
+                    flex-direction: column;
+
+                    > span {
+                        display: flex;
+                        // text-align: justify;
+                        // text-align-last: justify;
+                        align-items: center;
+                        justify-content: space-between;
+                        width: 17rem;
+                        border:1px solid #706f7b;
+                        height: 3rem;
+                        padding: 1rem 3rem;
+                        font-size:small;
+                        // > p {
+                        //     height: inherit;
+                        //     width: inherit;
+                        //     // border:1px solid #706f7b;
+
+                        // }
+                    }
+                }
+
+                >div > button{
+                    color: white;
+                    font-weight: bolder;
+                    font-size: 1rem;
+                    background-color: #ff4d30;
+                    border: 1px solid #ff4d30;
+                    width: 17rem;
+                    height: 4rem;
+                }
+
+            }
+        }
+        .selectBtn{
+            background-color: #ff4d30;
+            color: white !important;
+        }
+
+    }
+}
