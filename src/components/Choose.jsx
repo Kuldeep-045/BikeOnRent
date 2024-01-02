@@ -1,5 +1,7 @@
 import React from "react";
-import { FaAngleRight } from "react-icons/fa6";
+import { FaAngleRight, FaEarthAfrica } from "react-icons/fa6";
+import { HiOutlineCurrencyRupee } from "react-icons/hi2";
+import { GiCrossMark } from "react-icons/gi";
 
 const Choose = () => {
     return (
@@ -17,11 +19,11 @@ const Choose = () => {
                         renting experience, so don't miss out on your chance to
                         save big.
                     </p>
-                    <button className="homeBtn1">Learn More <FaAngleRight/></button>
+                    <button className="choosebtn">Find Details <FaAngleRight/></button>
                 </div>
                 <div className="secondchoose">
                     <article>
-                        <div>brvfesl</div>
+                        <div className="choosesvg"><FaEarthAfrica/></div>
                         <div>
                             <h1>Cross Country Drive</h1>
                             <span>
@@ -33,7 +35,7 @@ const Choose = () => {
                     </article>
 
                     <article>
-                        <div>brvfesl</div>
+                        <div className="choosesvg"><HiOutlineCurrencyRupee/></div>
                         <div>
                             <h1>All Inclusive Pricing</h1>
                             <span>
@@ -45,7 +47,7 @@ const Choose = () => {
                     </article>
 
                     <article>
-                        <div>brvfesl</div>
+                        <div className="choosesvg"><GiCrossMark/></div>
                         <div>
                             <h1>No Hidden Charges</h1>
                             <span>

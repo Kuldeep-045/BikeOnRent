@@ -1,0 +1,68 @@
+#faq{
+    width: 100%;
+    height: 100vh;
+    margin-top: 10rem;
+    .firstfaq{
+        width: 90%;
+        margin: auto;
+        height: 40%;
+        > article {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            > p {
+                width: 70%;
+                text-align: center;
+                color: #706f7b;
+            }
+            h3, h1, p {
+                margin: 5px; /* Remove default margins for the heading and paragraph */
+            }
+
+            h1 {
+                font-weight: bolder;
+                font-size: 2.5rem;
+            }
+
+            h3{
+                font-size: 1.5rem;
+                font-weight: bolder;
+            }
+        }
+    }
+    .secondfaq {
+        width: 90%;
+        margin: auto;
+        height: 60vh; /* Using viewport height for better responsiveness */
+        display: flex;
+        justify-content: space-between;
+      }
+      
+      .secondfaq article {
+        flex: 0 0 30%; /* Set the width of each article to 30% */
+        height: 80%; /* Take up full height of the container */
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        /* Nested span styling */
+        span {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          color: white;
+          width: 100%; /* Take up full width of the article */
+          height: 50px;
+          background-color: #ff6730;
+        }
+        p {
+            color: #706f7b;
+            padding: 1rem;
+            text-align: justify;
+            samp{
+                color: #ff6730;
+            }
+        }
+      }
+      
+}

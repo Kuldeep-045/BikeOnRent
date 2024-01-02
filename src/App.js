@@ -6,6 +6,9 @@ import Planning from './components/Planning';
 import Model from './components/Model'
 import Screen from './components/Screen'
 import Choose from './components/Choose'
+import Testimonial from './components/Testimonial'
+import FAQ from './components/FAQ.jsx'
+import Footer from './components/Footer.jsx'
 
 function App() {
   return (
@@ -17,6 +20,9 @@ function App() {
       <Model/>
       <Screen/>
       <Choose/>
+      <Testimonial/>
+      <FAQ/>
+      <Footer/>
     </>
   );
 }

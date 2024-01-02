@@ -1,41 +1,103 @@
-#choose{
+#choose {
     width: 100%;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: antiquewhite;
+    // background-color: antiquewhite;
     > div {
-        width: 90%;
+        width: 85%;
         height: inherit;
-        background-color: aliceblue;
+        // background-color: aliceblue;
         display: flex;
 
-
-        >div{
-            background-color: orange;
-            border: 1px solid red;
+        > div {
+            // background-color: orange;
+            // border: 1px solid red;
             height: inherit;
             width: 50%;
         }
     }
-    .firstchoose{
+    .firstchoose {
+        // background-color: lightgreen;
         display: flex;
         flex-direction: column;
         justify-content: center;
 
         // gap: 2rem;
         padding-right: 2rem;
-         > h3{
+        > h3 {
             font-size: 1.5rem;
             font-weight: bolder;
-         }
-          > main{
+        }
+        > main {
             font-size: 2.5rem;
             font-weight: bolder;
-          }
+        }
         > p {
-            color: #706f7b;;
+            color: #706f7b;
+            margin: 2rem 0;
+            font-weight: 600;
+        }
+        .choosebtn {
+            align-items: center;
+            justify-content: center;
+            padding: 20px 20px;
+            background-color: #ff4d30;
+            border-radius: 3px;
+            box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.35);
+            color: #fff;
+            // padding: 1rem 2rem;
+            transition: all 0.3s;
+            border: none;
+            font-size: 1.2rem;
+            // margin: 2rem;
+            // margin-left: 0;
+            width: 40%;
+            > svg {
+                vertical-align: middle;
+            }
+        }
+    }
+
+    .secondchoose {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        > article {
+            // background-color: aqua;
+            // border: 1px solid black;
+            display: flex;
+            height: 120px;
+            justify-content: center;
+            align-items: center;
+            // padding: 2.5rem 0;
+            margin: 20px;
+            .choosesvg{
+                height: 100px;
+                width: 210px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                // width: 120px;
+                border-radius: 50%;
+                background-color: #ffe8e3;
+                margin: 1rem;
+                
+            }
+            > div {
+                > svg {
+                    color: #ff6730;
+                    font-size: 3rem;
+                    margin: 10px 20px;
+                }
+                > span {
+                    color: #706f7b;
+                }
+                > h1{
+                    font-weight: bolder;
+                }
+            }
         }
     }
 }
