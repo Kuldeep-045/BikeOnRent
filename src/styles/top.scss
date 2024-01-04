@@ -1,0 +1,38 @@
+#top{
+    top: 0;
+    height: 60vh;
+    // background-color: beige;
+    display: flex;
+    justify-content: flex-start;
+    padding: 0 2rem;
+    margin-bottom:5rem;
+    h1{
+        font-size: 2.5rem;
+    }
+    p{
+        font-size: 1.5rem;
+    }
+
+    section:first-child {
+        /* Your styles for the first section go here */
+        // background-color: lightblue;
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* Add any other styles you need */
+      }
+      section:nth-child(2) {
+        /* Your styles for the second section go here */
+        // background-color: lightgreen;
+        width: 70%;
+        height: 100%;
+        /* Add any other styles you need */
+         img {
+            height: inherit;
+         }
+
+      }
+
+    
+}

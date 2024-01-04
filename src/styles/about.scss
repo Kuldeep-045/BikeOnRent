@@ -1,0 +1,42 @@
+#about{
+    // height: 60vh;
+    
+    .aboutcompany{
+        height: 70vh;
+        // background-color: beige;
+        display: flex;
+        margin: 10rem 0;
+        justify-content: center;
+        article{
+
+            width: 40%;
+            // border: 1px solid red;
+
+            img{
+                height: 100%;
+            }
+        }
+        article:nth-child(2) {
+            /* Your styles for the second article go here */
+            // background-color: lightblue;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            h1{
+                font-size: 3rem;
+            }
+            p{
+                font-weight: 500;
+                font-size: 1.3rem;
+                color: #706f7b;
+            }
+            span{
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+                // background-color: aquamarine;
+            }
+            /* Add any other styles you need for the second article */
+          }
+    }
+}

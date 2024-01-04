@@ -1,0 +1,85 @@
+#contact{
+    height: 90vh;
+    width: 100%;
+    // background-color: lightgreen;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    margin-top: 5rem;
+    > article{
+        // background-color: beige;
+        width: 50%;
+        height: inherit;
+        // border: 1px solid black;
+         
+        h1{
+            font-size: 3rem;
+        }
+        // p:first-child {
+        //     /* Your styles for the first <p> tag go here */
+        //     color: blue;
+        //     /* Add any other styles you need for the first <p> tag */
+        //   }
+
+        h1, p {
+         margin: 1rem 0;
+        }
+        p:first-of-type{
+            color: #706f7b;;
+            margin: 2rem 0;
+            
+        }
+        p{
+            width: 75%;
+            font-weight: 500;
+            svg{
+                margin-right:1rem;
+            }
+        }
+        div {
+            input{
+                width: 100%;
+                // top: 0;
+                align-items: self-start;
+                padding: 1rem 1rem;
+                height: 3rem;
+                border: none;
+                outline: none;
+                background-color: #f2f2f2;;
+                
+            }
+            button{
+                width: 100%;
+                height: 4rem;
+                border: none;
+            }
+        }
+        div:nth-child(3) {
+            /* Your styles for the third <div> tag go here */
+            input{
+                height: 10rem;
+            }
+            /* Add any other styles you need for the third <div> tag */
+          }
+    }
+    article:last-of-type{
+        // background-color: red;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+         div h3 span {
+            color: red;
+          }
+          div button{
+            background-color: #ff6730;
+            color: #fff;
+            font-size: 1.2rem;
+            font-weight: bold;
+          }
+          div {
+            h3{
+                margin: .5rem 0;
+            }
+          }
+    }
+}

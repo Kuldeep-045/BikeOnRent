@@ -3,8 +3,18 @@ import homeImage from "../assets/home.png"
 import { CiCircleCheck } from "react-icons/ci";
 import { FaAngleRight } from "react-icons/fa6";
 
+import Booking from './Booking';
+import Planning from './Planning';
+import Model from './Model'
+import Screen from './Screen'
+import Choose from './Choose'
+import Reviews from './Reviews.jsx'
+import FAQ from './FAQ.jsx'
+import Footer from './Footer.jsx'
+
 const Home = () => {
     return (
+        <>
         <div id="home">
             <div>
                 <h2>Plan your trip now</h2>
@@ -20,6 +30,16 @@ const Home = () => {
                 <img src={homeImage} alt="bike" />
             </div>
         </div>
+      <Booking/>
+      <Planning/>
+      <Model/>
+      <Screen/>
+      <Choose/>
+      <Reviews/>
+      <FAQ/>
+      {/* <Footer/>  */}
+
+        </>
     );
 };
 
