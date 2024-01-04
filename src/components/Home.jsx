@@ -1,5 +1,6 @@
 import React from "react";
 import homeImage from "../assets/home.png"
+// import Hunter from "../assets/Hunter.jpg"
 import { CiCircleCheck } from "react-icons/ci";
 import { FaAngleRight } from "react-icons/fa6";
 

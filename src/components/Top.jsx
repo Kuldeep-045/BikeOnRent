@@ -1,8 +1,8 @@
 import React from 'react'
 
-import image from "../assets/Hunter.jpg"
+// import image from "../assets/Hunter.jpg"
 
-const Top = ( {first}) => {
+const Top = ( {first, image}) => {
   return (
     <div id='top'>
         <section>

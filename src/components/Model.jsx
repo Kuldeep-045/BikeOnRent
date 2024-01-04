@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { data } from "../data";
-import image from "../assets/home.png";
+import image from "../assets/Hunter.jpg";
 
 const Model = () => {
 

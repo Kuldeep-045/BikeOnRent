@@ -4,11 +4,12 @@ import Screen from './Screen'
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdMailOutline } from "react-icons/md";
 import { CiLocationArrow1 } from "react-icons/ci";
+import image from '../assets/KTM.jpg'
 
 const Contact = () => {
   return (
     <>
-    <Top first={"Contact"}/>
+    <Top first={"Contact"} image={image}/>
     <div id="contact">
       <article>
         <h1>Need additional information?</h1>

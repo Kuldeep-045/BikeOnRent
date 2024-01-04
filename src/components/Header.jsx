@@ -1,14 +1,6 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
-import Home from './Home';
-import Booking from './Booking';
-import Planning from './Planning';
-import Model from './Model'
-import Screen from './Screen'
-import Choose from './Choose'
-import Reviews from './Reviews.jsx'
-import FAQ from './FAQ.jsx'
-import Footer from './Footer.jsx'
 
 const Header = () => {
   return (
@@ -39,12 +31,12 @@ const Header = () => {
 
 const NavContent=()=>{
     return <>
-        <a href="/" target="blank">Home</a>
-        <a href="/about" target="blank">About</a>
-        <a href="/model" target="blank">Model Vehicles</a>
-        <a href="/testimonials" target="blank">Testimonial</a>
-        <a href="/team" target="blank">Our Team</a>
-        <a href="/contact" target="blank">Contact</a>
+        <Link to="/" >Home</Link>
+        <Link to="/about" >About</Link>
+        <Link to="/model" >Model Vehicles</Link>
+        <Link to="/testimonials" >Testimonial</Link>
+        <Link to="/team" >Our Team</Link>
+        <Link to="/contact" >Contact</Link>
     </>
 }
 

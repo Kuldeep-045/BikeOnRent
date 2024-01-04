@@ -3,12 +3,13 @@ import Top from './Top'
 import contactImgae from '../assets/contact.jpg' 
 import Screen from './Screen'
 import Planning from './Planning'
+import image from '../assets/Hunter.jpg'
 
 const About = () => {
   return (
     <>
     <div id='about'>
-    <Top first={"About"}/>
+    <Top first={"About"} image={image}/>
       <div className='aboutcompany'>
         <article>
           <img  src={contactImgae} alt="" />
