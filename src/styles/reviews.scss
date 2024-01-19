@@ -66,3 +66,37 @@
     }
 
 }
+
+@media only screen and (max-width: 1000px) {
+    #reviews .secondsection {
+        width: 100%;
+        height: 40%;
+        display: flex;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    #reviews  {
+        // background-color: beige;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        h1,h3,p{
+            text-align: center;
+        }
+        .secondsection{
+            // background-color: aquamarine;
+            display: flex;
+            flex-direction: column;
+            >div{
+                width: 90%;
+            }
+            .firstreview{
+                margin: 1rem auto;
+            }
+            >p{
+                font-weight: 100;
+            }
+        }
+    }
+}

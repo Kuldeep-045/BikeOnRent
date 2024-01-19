@@ -21,7 +21,7 @@
                 color: #ff4d30;
             }
         }
-        >button{
+        .buttonContainer >button{
             // display: flex;
             align-items: center;
             justify-content: center;
@@ -40,7 +40,7 @@
                 vertical-align: middle;
             }
         }
-        .homeBtn1{
+        .buttonContainer .homeBtn1{
             background-color: black;
             box-shadow: 0 10px 15px 0 rgba(32, 32, 32, 0.35);
         }
@@ -51,5 +51,89 @@
         width: 100%;
 
     }
-    
+}
+
+// @media only screen and (max-width: 1000px) {
+
+//     #home{
+//         height: 90vh;
+//     }
+      
+// }
+@media only screen and (max-width: 1000px) {
+    .bikeImageHome{
+        display: none;
+    }   
+    // #home{
+    //     display: flex;
+    //     align-items: center;
+    // }
+    #home div:first-child {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 80%;
+        align-items: center;
+            margin: auto;
+            text-align: center;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .bikeImageHome{
+        display: none;
+    }   
+    // #home{
+    //     display: flex;
+    //     align-items: center;
+    // }
+    #home div:first-child {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 80%;
+        align-items: center;
+            margin: auto;
+            text-align: center;
+    }
+    .buttonContainer > button{
+        width: 40%;
+        font-size: small;
+        // background-color: cyan;
+    }
+    #home > div .buttonContainer > button {
+        width: 40%;
+        padding: 1rem 1.5rem;
+        
+    }
+}
+@media only screen and (max-width: 400px) {
+    .bikeImageHome{
+        display: none;
+    }   
+    // #home{
+    //     display: flex;
+    //     align-items: center;
+    // }
+    #home h1{
+        font-size: 4rem;
+    }
+    #home div:first-child {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 80%;
+        align-items: center;
+            margin: auto;
+            text-align: center;
+    }
+    .buttonContainer > button{
+        width: 40%;
+        font-size: small;
+        // background-color: cyan;
+    }
+    #home > div .buttonContainer > button {
+        width: 90%;
+        padding: 1rem 1.5rem;
+        
+    }
 }

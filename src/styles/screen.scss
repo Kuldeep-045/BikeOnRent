@@ -20,6 +20,7 @@
             font-size: 3rem;
             font-weight: bolder;
             color: white;
+            text-align: center;
         }
         > p{
             color: white;
@@ -29,5 +30,11 @@
                 color: #ff4d30;
             }
         }
+    }
+}
+@media only screen and (max-width: 1000px) {
+    #screen div{
+        height: auto;
+        padding: 3rem;
     }
 }

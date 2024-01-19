@@ -67,3 +67,41 @@
     }
     
 }
+@media only screen and (max-width: 1000px) {
+    #footer{
+        display: flex;
+        flex-wrap: wrap;
+        height: auto;
+
+    }
+    #footer div{
+        // background-color: red;
+        width: 40%;
+    }
+
+}
+@media only screen and (max-width: 600px) {
+    #footer{
+        display: flex;
+        flex-wrap: wrap;
+        height: auto;
+        text-align: center;
+        justify-content: center;
+
+    }
+    // #footer > div{
+    //     // background-color: red;
+    //     display: flex;
+    //     text-align: center;
+    //     width: 90%;
+    // }
+    #footer > div {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 90%;
+        padding: 3rem 0;
+        height: 100%;
+        margin: auto;
+    }
+}

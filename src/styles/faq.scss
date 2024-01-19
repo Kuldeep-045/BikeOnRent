@@ -66,3 +66,49 @@
       }
       
 }
+
+@media only screen and (max-width: 1000px) {
+    #faq{
+        // height: auto;
+        margin: -8rem auto 10rem auto;
+    }
+    #faq .secondfaq{
+            display: flex;
+            flex-direction: column;
+    }
+}
+@media only screen and (max-width: 600px) {
+
+    #faq .firstfaq > article {
+        h1{
+
+            text-align: center;
+        }
+        p{
+            width: 100%;
+            font-weight: 100;
+        }
+    }
+}
+@media only screen and (max-width: 400px) {
+
+    #faq{
+        margin-top: 2rem;
+        height: 140vh;
+        .secondfaq{
+            >article{
+                margin-bottom: 3rem;
+            }
+        }
+    }
+    #faq .firstfaq > article {
+        h1{
+
+            text-align: center;
+        }
+        p{
+            width: 100%;
+            font-weight: 100;
+        }
+    }
+}

@@ -49,3 +49,76 @@
 
     }
 }
+
+@media only screen and (max-width: 1000px) {
+
+    #planning{
+        // .planningTrip{
+            height: auto;
+            .planningTrip{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: start;
+            justify-content: flex-start;
+            article{
+                width: 45%;
+                margin-top: 1rem;
+            }
+           }
+        // }
+    }
+      
+}
+@media only screen and (max-width: 600px) {
+    #planning{
+        // .planningTrip{
+            height: auto;
+            .planningTrip{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: start;
+            justify-content: flex-start;
+            article{
+                width: 90%;
+                margin-top: 1rem;
+                span{
+                    width: 85%;
+                    text-align: center;
+                    font-weight: 100;
+                }
+            }
+           }
+        // }
+    }
+    #planning > div > h1 {
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 400px) {
+    #planning{
+        // .planningTrip{
+            font-size: 1rem;
+            width: 100%;
+            height: auto;
+            .planningTrip{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: start;
+            justify-content: flex-start;
+            article{
+                width: 90%;
+                margin-top: 1rem;
+                span{
+                    width: 100%;
+                    text-align: center;
+                    font-weight: 100;
+                }
+            }
+            h2{
+                font-size: 1.4rem;
+                font-weight: bolder;
+            }
+           }
+        // }
+    }
+}
