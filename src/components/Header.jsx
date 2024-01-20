@@ -1,43 +1,52 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import { GiHamburgerMenu } from 'react-icons/gi';
+import { RxCross2 } from 'react-icons/rx';
 
 const Header = () => {
+  const [showSidebar, setShowSidebar] = useState(false);
+
+  const toggleSidebar = () => {
+    setShowSidebar(!showSidebar);
+  };
+
   return (
     <>
-    <div className='navBar'>
+      <div className='navBar'>
         <div>Bike <br />Rental</div>
         <nav>
-            <NavContent/>
+          <NavContent toggleSidebar={toggleSidebar} />
         </nav>
         <div className='navBtn'>
-            <button >SignIn</button>
-            <button className='registerBtn'>Register</button>
+          <button >SignIn</button>
+          <button className='registerBtn'>Register</button>
         </div>
-    </div>
-        {/* <Home/>
-      <Booking/>
-      <Planning/>
-      <Model/>
-      <Screen/>
-      <Choose/>
-      <Testimonial/>
-      <FAQ/>
-      <Footer/> */}
-    {/* <div>hello</div> */}
-    </>
-  )
-}
+        <GiHamburgerMenu onClick={toggleSidebar} />
+      </div>
 
-const NavContent=()=>{
-    return <>
-        <Link to="/" >Home</Link>
-        <Link to="/about" >About</Link>
-        <Link to="/model" >Model Vehicles</Link>
-        <Link to="/testimonials" >Testimonial</Link>
-        <Link to="/team" >Our Team</Link>
-        <Link to="/contact" >Contact</Link>
+      <div>
+        {showSidebar && (
+          <nav className='sideBar'>
+            <RxCross2 onClick={toggleSidebar} />
+            <NavContent toggleSidebar={toggleSidebar} />
+          </nav>
+        )}
+      </div>
     </>
-}
+  );
+};
 
-export default Header
+const NavContent = ({ toggleSidebar }) => {
+  return (
+    <>
+      <Link to="/" onClick={toggleSidebar}>Home</Link>
+      <Link to="/about" onClick={toggleSidebar}>About</Link>
+      <Link to="/model" onClick={toggleSidebar}>Model Vehicles</Link>
+      <Link to="/testimonials" onClick={toggleSidebar}>Testimonial</Link>
+      <Link to="/team" onClick={toggleSidebar}>Our Team</Link>
+      <Link to="/contact" onClick={toggleSidebar}>Contact</Link>
+    </>
+  );
+};
+
+export default Header;
