@@ -15,7 +15,7 @@ const Header = () => {
       <div className='navBar'>
         <div>Bike <br />Rental</div>
         <nav>
-          <NavContent toggleSidebar={toggleSidebar} />
+          <NavContent/>
         </nav>
         <div className='navBtn'>
           <button >SignIn</button>
